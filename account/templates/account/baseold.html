@@ -1,0 +1,382 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head><meta charset="windows-1252"> 
+
+	<!-- META -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />    
+    <meta name="description" content="" />
+    
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="{% static 'cryptocurrencyinvestorsllc/images/favicon.png' %}" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'cryptocurrencyinvestorsllc/images/favicon.png' %}" />
+    
+    <!-- PAGE TITLE HERE -->
+    <title>Crypto Currency Investors LLC</title>
+    
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- [if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+	<![endif] -->
+    
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/css/bootstrap.min.css' %}">
+
+    {{ form.media.css }}
+    <!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/css/fontawesome/css/font-awesome.min.css' %}" />
+    <!-- FLATICON STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/css/flaticon.min.css' %}">
+    <!-- ANIMATE STYLE SHEET --> 
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/css/animate.min.css' %}">
+    <!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/css/owl.carousel.min.css' %}">
+    <!-- BOOTSTRAP SELECT BOX STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/css/bootstrap-select.min.css' %}">
+    <!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/css/magnific-popup.min.css' %}">
+    <!-- LOADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/css/loader.min.css' %}">    
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/css/style.css' %}">
+    <!-- THEME COLOR CHANGE STYLE SHEET -->
+    <link rel="stylesheet" class="skin" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/css/skin/skin-1.css' %}">
+    <!-- CUSTOM  STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/css/custom.css' %}">
+    <!-- SIDE SWITCHER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/css/switcher.css' %}">    
+
+    
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/plugins/revolution/revolution/css/settings.css' %}">
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link rel="stylesheet" type="text/css" href="{% static 'cryptocurrencyinvestorsllc/plugins/revolution/revolution/css/navigation.css' %}">
+    
+    <!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i&amp;subset=latin-ext" rel="stylesheet">
+
+<meta property="og:title" content="Crypto Currency Investors LLC - Trusted platform for earning cryptocurrency." />
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://cryptocurrencyinvestorsllc.com">
+<meta property="og:image" content="{% static 'cryptocurrencyinvestorsllc/images/favicon.png' %}">
+<meta property="og:description" content="Crypto Currency Investors LLC is a Trusted platform for earning cryptocurrency."> 
+<meta property="og:site_name" content="Crypto Currency Investors LLC"> 
+ 
+</head>
+
+<body id="bg">
+ 
+	<div class="page-wraper"> 
+       	
+        <!-- HEADER START -->
+        <header class="site-header header-style-3 topbar-transparent">
+        
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="clearfix">
+                        	<div class="wt-topbar-left">
+                           	    <ul class="list-unstyled e-p-bx pull-left">
+                                       {% for info in info %}
+                                    <li><i class="fa fa-envelope"></i>{{info.email}}</li>
+                                    <li><i class="fa fa-phone"></i>{{info.phone}}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            
+                        	<div class="wt-topbar-right">
+                            	<div class=" language-select pull-right">
+                                     <div id="google_translate_element"style="z-index:+1;"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,bg,co,cs,cy,da,de,en,es,fi,fr,hr,id,it,ja,ka,ko,la,nl,no,pl,pt,ro,sv,th,tl,tr,zh-CN,zh-TW', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, gaTrack: true, gaId: 'UA-12345-12'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="translate.google.com/translate_a/elementa0d8a0d8.html?cb=googleTranslateElementInit"></script>
+                                </div>
+                                
+                        		<ul class="list-unstyled e-p-bx pull-right">
+                                    <li><a href="{% url 'login' %}" ><i class="fa fa-user"></i>Login</a></li>
+                                    <li><a href="{% url 'register' %}" ><i class="fa fa-sign-in"></i>Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sticky-header main-bar-wraper">
+                <div class="main-bar">
+                    <div class="container">
+                        
+                            <div class="logo-header mostion">
+                                <a href="#" style="color:#FF9000;font-size:20px">
+								 <img src="{% static 'cryptocurrencyinvestorsllc/images/luxurypips.png' %}" style="">
+                                </a>
+                            </div>
+                            
+                            <!-- NAV Toggle Button -->
+                            <button data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            
+                           
+                  
+                            
+                            <!-- MAIN Vav -->
+                            <div class="header-nav navbar-collapse collapse ">
+                        <ul class=" nav navbar-nav">
+                                <li class="active"><a href="{% url 'home_page' %}">Home</a></li>
+                                <li class=""><a href="{% url 'about_page' %}">About Us</a></li>
+                                <li class=""><a href="{% url 'home_page' %}#ourpackages">Our Plans</a></li>
+                                <li class=""><a href="{% url 'home_page' %}#wcu">Why Choose Us</a></li>
+                                <li class=""><a href="{% url 'home_page' %}#wwo">What We Offer</a></li>
+                                <li class=""><a href="{% url 'faq_page' %}">Faq</a></li>
+                                <li class=""><a href="{% url 'contact_page' %}">Contact Us</a></li>
+                              
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <!-- HEADER END -->
+        
+
+        {% block content %}
+
+
+
+        {% endblock %}
+
+
+        
+        <!-- FOOTER START -->
+        <footer class="site-footer footer-dark bg-no-repeat bg-full-height bg-center "  style="background-image:url({% static 'cryptocurrencyinvestorsllc/images/background/footer-bg.jpg' %});">
+            <!-- FOOTER BLOCKES START -->  
+            <div class="footer-top overlay-wraper">
+                <div class="overlay-main bg-black opacity-05"></div>
+                <div class="container">
+                    <div class="row">
+                        <!-- ABOUT COMPANY -->
+                        <div class="col-md-5 col-sm-6">  
+                            <div class="widget widget_about">
+                                <h4 class="widget-title text-white">About Company</h4>
+                                
+                                <p style="text-align:justify">Crypto Currency Investors LLC is an international online financial investment platform services in various financial instruments.
+
+                                    Crypto Currency Investors LLC was founded  by a group of wall street veteran high frequency traders. with years of experience successfully trading the crypto, stock and Forex markets by utilizing cutting edge machine learning systems. systems which perform extremely well in volatile market. Our goal is to create a trading platform for early adopters to reap profits from this attractive markets with minimal risk exposure.
+                                </p>  
+                            </div>
+                        </div> 
+                           
+                        <!-- USEFUL LINKS -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget widget_services">
+                                <h4 class="widget-title text-white">Useful links</h4>
+                                <ul>
+                                    <li><a href="{% url 'about_page' %}">About</a></li>
+                                    <li><a href="{% url 'faq_page' %}">FAQ</a></li>
+                                    <li><a href="{% url 'contact_page' %}">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- NEWSLETTER -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget widget_newsletter">
+                                <h4 class="widget-title text-white">Newsletter</h4>
+                                <div class="newsletter-bx">
+                                    <form action="" method="post" accept-charset="utf-8" id="">
+                                        {% csrf_token %}
+                                        <div class="input-group">
+                                            {% render_field form_news.email name="news-letter" class="form-control" placeholder="ENTER YOUR EMAIL" type="text" %}
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="site-button"><i class="fa fa-paper-plane-o"></i></button>
+                                        </span>
+                                    </div>
+                                     </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    
+                       <div class="col-md-3 col-sm-6  p-tb20">
+                           <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix">
+                                <div class="icon-md text-primary">
+                                    <span class="iconmoon-travel"></span>
+                                </div>
+                                <div class="icon-content text-white">
+                                    <h5 class="wt-tilte text-uppercase m-b0">Address</h5>
+                                    <p>511 Walnut St. Cincinnati, OH 45202</p>
+                                </div>
+                           </div>
+                        </div>
+                       <div class="col-md-3 col-sm-6  p-tb20 ">
+                           <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix ">
+                                <div class="icon-md text-primary">
+                                    <span class="iconmoon-smartphone-1"></span>
+                                </div>
+                                <div class="icon-content text-white">
+                                    <h5 class="wt-tilte text-uppercase m-b0">Phone</h5>
+                                    {% for info in info %}
+                                    <p class="m-b0" style="padding:10px">{{info.phone}}</p>
+                                    {% endfor %}
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-sm-6 p-tb20">
+                           <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix">
+                                <div class="icon-md text-primary">
+                                    <span class="iconmoon-email"></span>
+                                </div>
+                                <div class="icon-content text-white">
+                                    <h5 class="wt-tilte text-uppercase m-b0">Email</h5>
+                                    {% for info in info %}
+                                    <p class="m-b0">{{info.email}}</p>
+                                    {% endfor %}
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+                  </div>
+                </div>
+            </div>
+            <!-- FOOTER COPYRIGHT -->
+            <div class="footer-bottom  overlay-wraper">
+                <div class="overlay-main"></div>
+                <div class="constrot-strip"></div>
+                <div class="container p-t30">
+                    <div class="row">
+                        <div class="wt-footer-bot-left">
+                            <span class="copyrights-text">&copy;{% now 'Y' %}Cryptocurrency Investorsllc All Rights Reserved.</span>
+                        </div>
+                        <div class="wt-footer-bot-right">
+                            <ul class="copyrights-nav pull-right"> 
+                                <li><a href="{% url 'terms_page' %}">Terms  & Condition</a></li>
+                                <li><a href="{% url 'privacy_page' %}">Privacy Policy</a></li>
+                                <li><a href="{% url 'contact_page' %}">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+
+        
+        <!-- BUTTON TOP START -->
+        <button class="scroltop"><span class=" iconmoon-house relative" id="btn-vibrate"></span>Top</button>
+
+        
+        
+    
+                    
+                
+    </div>
+ 
+<!-- LOADING AREA START ===== -->
+<div class="loading-area">
+    <div class="loading-box"></div>
+    <div class="loading-pic">
+        <div class="cssload-container">
+            <div class="cssload-dot bg-primary"><i class="fa fa-bitcoin"></i></div>
+            <div class="step" id="cssload-s1"></div>
+            <div class="step" id="cssload-s2"></div>
+            <div class="step" id="cssload-s3"></div>
+        </div>
+    </div>
+</div>
+<!-- LOADING AREA  END ====== -->
+
+<!-- JAVASCRIPT  FILES ========================================= --> 
+<script src="{% static 'cryptocurrencyinvestorsllc/js/jquery-1.12.4.min.js' %}"></script><!-- JQUERY.MIN JS -->
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/bootstrap.min.js' %}"></script><!-- BOOTSTRAP.MIN JS -->
+
+{{ form.media.js }}
+
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/bootstrap-select.min.js' %}"></script><!-- FORM JS -->
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/jquery.bootstrap-touchspin.min.js' %}"></script><!-- FORM JS -->
+
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/magnific-popup.min.js' %}"></script><!-- MAGNIFIC-POPUP JS -->
+
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/waypoints.min.js' %}"></script><!-- WAYPOINTS JS -->
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/counterup.min.js' %}"></script><!-- COUNTERUP JS -->
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/waypoints-sticky.min.js' %}"></script><!-- COUNTERUP JS -->
+
+<script  src="{% static 'cryptocurrencyinvestorsllc/js/isotope.pkgd.min.js' %}"></script><!-- MASONRY  -->
+
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/owl.carousel.min.js' %}"></script><!-- OWL  SLIDER  -->
+
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/stellar.min.js' %}"></script><!-- PARALLAX BG IMAGE   --> 
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/scrolla.min.js' %}"></script><!-- ON SCROLL CONTENT ANIMTE   -->
+
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/custom.js' %}"></script><!-- CUSTOM FUCTIONS  -->
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/shortcode.js' %}"></script><!-- SHORTCODE FUCTIONS  -->
+<script   src="{% static 'cryptocurrencyinvestorsllc/js/switcher.js' %}"></script><!-- SWITCHER FUCTIONS  -->
+<script  src="{% static 'cryptocurrencyinvestorsllc/js/jquery.bgscroll.js' %}"></script><!-- BACKGROUND SCROLL -->
+<script  src="{% static 'cryptocurrencyinvestorsllc/js/tickerNews.min.js' %}"></script><!-- MARQUEE SCROLL -->
+
+
+<!--Tidio chart script here-->
+
+<script src="//code.tidio.co/30fji7bcprydpkfhmbdczbvaukmpbuw6.js" async></script>
+<!-- MARQUEE FUNCTiON -->
+<script type="text/javascript">
+	$(function(){
+		var timer = !1;
+		_Ticker = $("#T1").newsTicker();
+		_Ticker.on("mouseenter",function(){
+			var __self = this;
+			timer = setTimeout(function(){
+				__self.pauseTicker();
+			},200);
+		});
+		_Ticker.on("mouseleave",function(){
+			clearTimeout(timer);
+			if(!timer) return !1;
+			this.startTicker();
+		});
+	});
+</script>
+<!-- REVOLUTION JS FILES -->
+
+<script  src="{% static 'cryptocurrencyinvestorsllc/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script  src="{% static 'cryptocurrencyinvestorsllc/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
+<script  src="{% static 'cryptocurrencyinvestorsllc/plugins/revolution/revolution/js/extensions/revolution-plugin.js' %}"></script>
+
+<!-- REVOLUTION SLIDER FUNCTION  ===== -->
+<script type="text/javascript"  src="{% static 'cryptocurrencyinvestorsllc/js/rev-script-4.js' %}"></script>
+
+
+
+
+<!-- STYLE SWITCHER END ==== -->
+
+<!--Start of Tawk.to Script-->
+
+
+<!--End of Tawk.to Script-->
+<!--End of Tawk.to Script-->
+</body>
+
+
+
+</html>
